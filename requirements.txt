@@ -1,0 +1,2 @@
+# No se requieren dependencias externas instalables mediante pip.
+# Este proyecto utiliza unicamente modulos de la libreria estandar de Python (tkinter).
