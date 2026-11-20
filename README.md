@@ -47,7 +47,7 @@ Proyecto3/
 
 - **`rsa_gui.py` (Interfaz Gráfica de Usuario):**
   - Construye la ventana principal, el encabezado, las pestañas (`ttk.Notebook`), cuadros de texto, botones y campos de entrada.
-  - Importa `rsa_math` localmente para invocar las validaciones y cálculos al presionar los botones "🔐 Encriptar" y "🔓 Desencriptar".
+  - Importa `rsa_math` localmente para invocar las validaciones y cálculos al presionar los botones "Encriptar" y "Desencriptar".
   - Gestiona la visualización de resultados y resúmenes detallados paso a paso.
   - Ofrece la función `iniciar_interfaz()` para iniciar el bucle de eventos (`mainloop`).
 
@@ -117,7 +117,7 @@ Todas las funciones matemáticas se encuentran en el módulo [rsa_math.py](rsa_m
 7. **Salidas en la GUI:**
    - En el cuadro de **Resultados de Salida** se muestran el cifrado $C$, la longitud original $L$ y la llave pública $(e, n)$.
    - En el panel inferior **Resumen Detallado del Proceso** se muestra el desglose completo: valores de $n$, $\varphi$, verificación del MCD, longitud $L$, aplicación de relleno, códigos ASCII de cada carácter, bloques $m$, fórmula aplicada y bloques resultantes $c$.
-   - Se incluye un botón **"➡️ Enviar a Desencriptar"** que transfiere automáticamente $C$, $L$, $p$, $q$ y $e$ a la pestaña de desencriptación.
+   - Se incluye un botón **"Enviar a Desencriptar"** que transfiere automáticamente $C$, $L$, $p$, $q$ y $e$ a la pestaña de desencriptación.
 
 ### C. Desencriptación
 1. Se ingresan $C$, $L$, $p$, $q$ y $e$.
@@ -147,7 +147,7 @@ Todas las funciones matemáticas se encuentran en el módulo [rsa_math.py](rsa_m
 | **Exponente privado ($d$)** | $d = 8009$ |
 | **Mensaje recuperado** | `"RSA"` |
 
-> Ambos botones **"💡 Cargar Ejemplo de Referencia"** en la interfaz permiten cargar este caso de prueba con un solo clic para verificar el funcionamiento inmediato.
+> Ambos botones **"Cargar Ejemplo de Referencia"** en la interfaz permiten cargar este caso de prueba con un solo clic para verificar el funcionamiento inmediato.
 
 ---
 
