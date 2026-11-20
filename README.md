@@ -124,7 +124,7 @@ Todas las funciones matemáticas se encuentran en el módulo [rsa_math.py](rsa_m
 2. Se validan los parámetros RSA ($p, q, e$) y se calculan $n$ y $\varphi$.
 3. Se valida el formato de $C$: bloques de exactamente 6 dígitos decimales y que cumplan $0 \le c < n$.
 4. Se valida la coherencia de $L$: si $C$ tiene $k$ bloques, $L$ debe ser estrictamente $2k$ (longitud par, sin relleno) o $2k - 1$ (longitud impar, con relleno).
-5. Se calcula la llave privada $d = \text{inverso\_modular}(e, \varphi)$.
+5. Se calcula la llave privada usando `inverso_modular(e, φ)` para obtener $d$.
 6. Para cada bloque $c$, se calcula $m \equiv c^d \pmod n$.
 7. Se divide cada $m$ en dos códigos de 3 dígitos, se verifica que ambos estén en $[32, 126]$ y se convierten a caracteres con `chr()`.
 8. Si $L$ es impar, se comprueba y retira el último espacio de relleno.
